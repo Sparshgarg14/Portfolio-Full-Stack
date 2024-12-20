@@ -8,7 +8,7 @@ function CodeforcesRating({ handle }) {
         // Fetch rating from the backend
         const fetchRating = async () => {
             try {
-                const response = await fetch(`https://spring-boot-backend-1-r3fa.onrender.com/api/codeforces/user/SG_14/rating`);
+                const response = await fetch(`https://spring-boot-backend-2-q5io.onrender.com/api/codeforces/user/SG_14/rating`);
                 if (!response.ok) {
                     throw new Error("Failed to fetch rating");
                 }

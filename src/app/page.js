@@ -180,8 +180,8 @@ export default function Home() {
       </p>
     </div>
 
-    {/* Second Codeforces Rating */}
-    <div className="flex flex-col items-center">
+   {/* Second Codeforces Rating */}
+   <div className="flex flex-col items-center">
       <div className="h-40 w-40 flex items-center justify-center bg-gradient-to-r from-orange-400 to-orange-600 rounded-full shadow-lg">
         <LeetcodeStats className="text-3xl text-white" handle="SG_14" />
       </div>

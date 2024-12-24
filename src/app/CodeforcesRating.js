@@ -20,7 +20,7 @@ function CodeforcesRating({ handle }) {
         };
 
         fetchRating();
-    }, [handle]);
+    }, [handle]); // Dependency array ensures API call is made when the handle changes
 
     return (
         <div>

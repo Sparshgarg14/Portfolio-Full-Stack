@@ -24,7 +24,7 @@ function CodeforcesRating({ handle }) {
 
     return (
         <div>
-            <h2>Codeforces Rating</h2>
+            <h2 className="text-3xl">Codeforces Rating</h2>
             {error ? (
                 <p style={{ color: 'red' }}>Error: {error}</p>
             ) : rating !== null ? (

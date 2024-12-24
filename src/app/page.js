@@ -178,7 +178,7 @@ export default function Home() {
 
 
     <section
-  className="profiledisplay flex flex-col items-center min-h-screen py-20 bg-white dark:bg-black"
+  className="profiledisplay flex flex-col items-center min-h-screen py-10 bg-white dark:bg-black"
   id="Profile"
 >
   <h2 className="text-5xl text-center text-gray-800 dark:text-white py-10">

@@ -14,7 +14,7 @@ function LeetcodeStats({ username }) {
                 }
                 const data = await response.json();
                 setStats(data); // Update stats state
-                console.log(data); // Debugging: Check the API response structure
+                // console.log(data); // Debugging: Check the API response structure
             } catch (err) {
                 setError(err.message); // Update error state
             }

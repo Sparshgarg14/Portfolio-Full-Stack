@@ -183,7 +183,7 @@ export default function Home() {
    {/* Second Leetcode Rating */}
    <div className="flex flex-col items-center">
       <div className="h-40 w-40 flex items-center justify-center bg-gradient-to-r from-orange-400 to-orange-600 rounded-full shadow-lg">
-        <LeetcodeStats className="text-3xl text-white" handle="Sparsh_Garg" />
+        <LeetcodeStats className="text-3xl text-white" username="Sparsh_Garg" />
       </div>
       <p className="text-lg text-gray-800 dark:text-gray-300 text-center max-w-sm mt-4">
         Another competitive programming journey showcased through Leetcode.

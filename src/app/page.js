@@ -99,10 +99,11 @@ export default function Home() {
           </a>
           <a
             href="#nightmode"
-            className="text-gray-800 dark:text-white"
-            onClick={() => setMenuOpen(false)}
-          >
-          <BsFillMoonStarsFill/>
+            className="text-gray-800 dark:text-white">
+            <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)}
+            className="cursor-pointer text-2xl text-gray-800 dark:text-white" id="nightmode"
+          />
+          
           </a>
           <a
             href="#Contact"

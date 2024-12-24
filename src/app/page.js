@@ -102,14 +102,14 @@ export default function Home() {
             className="text-gray-800 dark:text-white"
             onClick={() => setMenuOpen(false)}
           >
-            
+          <BsFillMoonStarsFill/>
           </a>
           <a
             href="#Contact"
             className="text-gray-800 dark:text-white"
             onClick={() => setMenuOpen(false)}
           >
-            Projects
+            Contact Me
           </a>
 
         </ul>

@@ -177,8 +177,7 @@ export default function Home() {
     </section>
 
 
-    <section
-  className="profiledisplay flex flex-col items-center min-h-screen py-10 bg-white dark:bg-black"
+    <section className="profiledisplay flex flex-col items-center min-h-screen py-10 bg-white dark:bg-black"
   id="Profile"
 >
   <h2 className="text-5xl text-center text-gray-800 dark:text-white py-10">
@@ -187,7 +186,7 @@ export default function Home() {
   <div className="flex flex-row flex-wrap justify-center items-center gap-16">
     {/* First Codeforces Rating */}
     <div className="flex flex-col items-center">
-      <div className="h-56 w-56 flex items-center justify-center bg-gradient-to-r from-orange-400 to-orange-600 rounded-full shadow-lg">
+      <div className="h-72 w-72 flex items-center justify-center bg-gradient-to-r from-orange-400 to-orange-600 rounded-full shadow-lg">
         <CodeforcesRating className="text-3xl text-white" handle="SG_14" />
       </div>
       <p className="text-lg text-gray-800 dark:text-gray-300 text-center max-w-sm mt-4">
@@ -198,7 +197,7 @@ export default function Home() {
 
    {/* Second Leetcode Rating */}
    <div className="flex flex-col items-center">
-      <div className="h-56 w-56 flex items-center justify-center bg-gradient-to-r from-orange-400 to-orange-600 rounded-full shadow-lg">
+      <div className="h-72 w-72 flex items-center justify-center bg-gradient-to-r from-orange-400 to-orange-600 rounded-full shadow-lg">
         <LeetcodeStats className="text-3xl text-white" username="Sparsh_Garg" />
       </div>
       <p className="text-lg text-gray-800 dark:text-gray-300 text-center max-w-sm mt-4">

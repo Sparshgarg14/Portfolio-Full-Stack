@@ -25,7 +25,7 @@ function LeetcodeStats({ username }) {
 
     return (
         <div>
-            <h2>Leetcode Stats</h2>
+            <h2 className="text-3xl">Leetcode Stats</h2>
             {error ? (
                 <p style={{ color: 'red' }}>Error: {error}</p>
             ) : stats ? (

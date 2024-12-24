@@ -54,7 +54,7 @@ export default function Home() {
         <li>
           <BsFillMoonStarsFill
             onClick={() => setDarkMode(!darkMode)}
-            className="cursor-pointer text-2xl text-gray-800 dark:text-white"
+            className="cursor-pointer text-2xl text-gray-800 dark:text-white" id="nightmode"
           />
         </li>
         <a
@@ -97,6 +97,21 @@ export default function Home() {
           >
             Projects
           </a>
+          <a
+            href="#nightmode"
+            className="text-gray-800 dark:text-white"
+            onClick={() => setMenuOpen(false)}
+          >
+            
+          </a>
+          <a
+            href="#Contact"
+            className="text-gray-800 dark:text-white"
+            onClick={() => setMenuOpen(false)}
+          >
+            Projects
+          </a>
+
         </ul>
       )}
     </nav>

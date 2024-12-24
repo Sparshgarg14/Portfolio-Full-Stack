@@ -14,6 +14,7 @@ function LeetcodeStats({ username }) {
                 }
                 const data = await response.json();
                 setStats(data); // Update stats state
+                console.log(data); // Debugging: Check the API response structure
             } catch (err) {
                 setError(err.message); // Update error state
             }
@@ -29,9 +30,7 @@ function LeetcodeStats({ username }) {
                 <p style={{ color: 'red' }}>Error: {error}</p>
             ) : stats ? (
                 <div>
-                    <p>
-                        <strong>Username:</strong> {username}
-                    </p>
+                   
                     <p>
                         <strong>Questions Solved:</strong> {stats.totalSolved}
                     </p>

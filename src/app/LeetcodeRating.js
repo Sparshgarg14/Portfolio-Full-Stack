@@ -33,7 +33,7 @@ function LeetcodeStats({ username }) {
                         <strong>Username:</strong> {username}
                     </p>
                     <p>
-                        <strong>Questions Solved:</strong> {stats.questionsSolved}
+                        <strong>Questions Solved:</strong> {stats.totalSolved}
                     </p>
                     <p>
                         <strong>Ranking:</strong> {stats.ranking}

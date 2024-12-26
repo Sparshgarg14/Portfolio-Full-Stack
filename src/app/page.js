@@ -9,6 +9,9 @@ import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import CodeforcesRating from './CodeforcesRating';
 import LeetcodeStats from "./LeetcodeRating";
+import { SiCodeforces } from "react-icons/si";
+import { SiLeetcode } from "react-icons/si";
+import { TbBrandLeetcode } from "react-icons/tb";
 
 
 
@@ -122,14 +125,14 @@ export default function Home() {
           <h3 className="flex justify-center text-3xl py-1 bg-gradient-to-r from-orange-800 via-orange-600 to-yellow-200 bg-clip-text text-transparent font-medium"> {text} <span> <Cursor/></span></h3>
           <p className="flex justify-center text-lg py-5  text-gray-800  dark:text-white">Freelancer providing services for programming needs. Join me down below and let's get code websites</p>
           </div>
-          <div className="text-5xl flex justify-center gap-5 text-gray-900  dark:text-orange-500">
-            <a className=" " href="https://github.com/Sparshgarg14/Java-DSA-" ><AiFillGithub /> </a>
-            <a className="" href="https://www.linkedin.com/in/sparsh-garg14/" target="_blank" rel="noopener noreferrer">
+          <div className="text-5xl flex justify-center gap-5 text-gray-900  dark:text-orange-500  ">
+            <a className=" ease-in duration-300  hover:scale-125 cursor-pointer " href="https://github.com/Sparshgarg14/Java-DSA-" ><AiFillGithub className="" /> </a>
+            <a className="ease-in duration-300  hover:scale-125" href="https://www.linkedin.com/in/sparsh-garg14/" target="_blank" rel="noopener noreferrer">
           <AiFillLinkedin />
           </a>
-          <a  className="" href="mailto:ssparsh2000@gmail.com"><AiFillMail/> </a>
+          <a  className="ease-in duration-300  hover:scale-125" href="mailto:ssparsh2000@gmail.com"><AiFillMail/> </a>
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-orange-600 rounded-full w-80 h-80 mt-10 mb-10 overflow-hidden shadow-[0_10px_30px_rgba(255,165,0,0.6)]"><img src="https://prompti.ai/wp-content/uploads/2023/07/pcboi2.png" alt="" /></div>
+          <div className="ease-in duration-300  hover:scale-110 relative mx-auto rounded-full w-80 h-80 mt-20 mb-10 overflow-hidden shadow-[0_0_90px_rgba(255,165,0,0.6)]"><img src="https://prompti.ai/wp-content/uploads/2023/07/pcboi2.png" alt="" /></div>
         </section>
 
 
@@ -138,7 +141,7 @@ export default function Home() {
       <h2 className="  text-5xl text-center text-gray-800 dark:text-white py-10 mb-0 ">Services</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 py-10">
         {/* Frontend Development */}
-        <div className="servicebox bg-gradient-to-r from-orange-400 to-orange-600 rounded-lg p-6 ease-in duration-300 hover:to-yellow-500 hover:scale-110 cursor-pointer">
+        <div className="servicebox bg-gradient-to-r from-orange-400 to-orange-600 rounded-lg p-6 ease-in duration-300 hover:to-yellow-500 hover:scale-110 cursor-pointer shadow-[0_0_100px_rgba(255,165,0,0.6)]">
           <div className="servicesinfo flex flex-col">
             <h4 className="text-xl font-semibold text-white mb-4">Frontend Development</h4>
             <p className="text-white">
@@ -147,7 +150,7 @@ export default function Home() {
           </div>
         </div>
         {/* UI/UX Design */}
-        <div className="servicebox bg-gradient-to-r from-orange-400 to-orange-600 rounded-lg p-6 ease-in duration-300 hover:to-yellow-500 hover:scale-110 cursor-pointer">
+        <div className="servicebox bg-gradient-to-r from-orange-400 to-orange-600 rounded-lg p-6 ease-in duration-300 hover:to-yellow-500 hover:scale-110 cursor-pointer shadow-[0_0_100px_rgba(255,165,0,0.6)]">
           <div className="servicesinfo flex flex-col">
             <h4 className="text-xl font-semibold text-white mb-4">UI/UX Design</h4>
             <p className="text-white">
@@ -156,7 +159,7 @@ export default function Home() {
           </div>
         </div>
         {/* Backend Development */}
-        <div className="servicebox bg-gradient-to-r from-orange-400 to-orange-600 rounded-lg p-6 ease-in duration-300 hover:to-yellow-500 hover:scale-110 cursor-pointer">
+        <div className="servicebox bg-gradient-to-r from-orange-400 to-orange-600 rounded-lg p-6 ease-in duration-300 hover:to-yellow-500 hover:scale-110 cursor-pointer shadow-[0_0_100px_rgba(255,165,0,0.6)]">
           <div className="servicesinfo flex flex-col">
             <h4 className="text-xl font-semibold text-white mb-4">Backend Development</h4>
             <p className="text-white">
@@ -165,7 +168,7 @@ export default function Home() {
           </div>
         </div>
         {/* Competitive Programming */}
-        <div className="servicebox bg-gradient-to-r from-orange-400 to-orange-600 rounded-lg p-6 ease-in duration-300 hover:to-yellow-500 hover:scale-110 cursor-pointer">
+        <div className="servicebox bg-gradient-to-r from-orange-400 to-orange-600 rounded-lg p-6 ease-in duration-300 hover:to-yellow-500 hover:scale-110 cursor-pointer shadow-[0_0_100px_rgba(255,165,0,0.6)]">
           <div className="servicesinfo flex flex-col">
             <h4 className="text-xl font-semibold text-white mb-4">Competitive Programming</h4>
             <p className="text-white">
@@ -185,10 +188,20 @@ export default function Home() {
   </h2>
   <div className="flex flex-row flex-wrap justify-center items-center gap-16">
     {/* First Codeforces Rating */}
-    <div className="flex flex-col items-center">
-      <div className="h-72 w-72 flex items-center justify-center bg-gradient-to-r from-orange-400 to-orange-600 rounded-full shadow-lg">
-        <CodeforcesRating className="text-3xl text-white" handle="SG_14" />
-      </div>
+    <div className="flex flex-col items-center ">
+      <div className="h-72 w-72 flex items-center justify-center bg-gradient-to-r from-orange-400 to-orange-600 rounded-full shadow-[0_0_100px_rgba(255,165,0,0.6)]">
+        <CodeforcesRating className=" text-white" handle="SG_14" />
+        
+        </div>
+        <div className="ease-in duration-300   hover:scale-110 h-16 w-16 ">
+        <a 
+        className="mt-2 ease-in duration-300 hover:scale-110 h-16 w-16 flex items-center justify-center" 
+        href="https://codeforces.com/profile/SG_14" 
+        target="_blank" 
+        rel="noopener noreferrer">
+        <SiCodeforces className="h-14 w-14 mt-2 text-gray-900 dark:text-orange-600 "/>    
+    </a>
+       </div>
       <p className="text-lg text-gray-800 dark:text-gray-300 text-center max-w-sm mt-4">
         Explore my competitive programming journey on Codeforces, where I solve
         challenging problems and enhance my coding skills.
@@ -197,9 +210,16 @@ export default function Home() {
 
    {/* Second Leetcode Rating */}
    <div className="flex flex-col items-center">
-      <div className="h-72 w-72 flex items-center justify-center bg-gradient-to-r from-orange-400 to-orange-600 rounded-full shadow-lg">
-        <LeetcodeStats className="text-3xl text-white" username="Sparsh_Garg" />
+      <div className="h-72 w-72 flex items-center justify-center bg-gradient-to-r from-orange-400 to-orange-600 rounded-full shadow-[0_0_100px_rgba(255,165,0,0.6)]">
+        <LeetcodeStats className="text-white" username="Sparsh_Garg" />
       </div>
+      <div className=" mt-1 ease-in duration-300  hover:scale-110 h-16 w-16"><a 
+        className="mt-1 ease-in duration-300 hover:scale-110 h-16 w-16 flex items-center justify-center" 
+        href="https://leetcode.com/u/Sparsh_Garg/" 
+        target="_blank" 
+        rel="noopener noreferrer">
+        <TbBrandLeetcode className="h-16 w-16 text-gray-900  dark:text-orange-600"  />
+    </a></div>
       <p className="text-lg text-gray-800 dark:text-gray-300 text-center max-w-sm mt-4">
         Another competitive programming journey showcased through Leetcode.
       </p>
@@ -219,13 +239,19 @@ export default function Home() {
         src="https://deifkwefumgah.cloudfront.net/screenshots/thumbnail/trananhtuat-fullstack-mern-movie-2022-thumbnail-2x.webp"
         alt="Project 1"
       />
-      <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-2">Project 1</h3>
+      <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-2">Leetcode Rest API</h3>
       <p className="text-gray-600 dark:text-gray-300">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, fuga vitae saepe itaque rem blanditiis quo obcaecati.
+      Designed and developed a Spring Boot REST API to fetch real-time LeetCode statistics, allowing seamless integration into applications. The API is containerized using Docker and deployed on Render. 
       </p>
-      <button className="mt-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white py-2 px-4 rounded hover:to-yellow-500">
+      
+      <a  className="mt-2 ease-in duration-300 hover:scale-110  flex items-center justify-center" 
+        href="https://github.com/Sparshgarg14/leetcode-backend" 
+        target="_blank" 
+        rel="noopener noreferrer">
+      <button className="mt-4  bg-gradient-to-r from-teal-400 to-blue-500 hover:to-pink-500 text-white py-2 px-4 rounded shadow-lg shadow-cyan-500/50 ">
         See Project
       </button>
+      </a>
     </div>
 
     
@@ -235,13 +261,18 @@ export default function Home() {
         src="https://www.creative-tim.com/blog/content/images/wordpress/2021/03/Material-Dashboard-React-Nodejs.jpg"
         alt="Project 2"
       />
-      <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-2">Project 2</h3>
+      <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-2">Github Analytics </h3>
       <p className="text-gray-600 dark:text-gray-300">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, fuga vitae saepe itaque rem blanditiis quo obcaecati.
+      GitHub Analytics Dashboard, a web application that provides comprehensive insights into GitHub users and repositories. Built using React.js for the frontend and Chart.js/D3.js for data visualizations. 
       </p>
-      <button className="mt-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white py-2 px-4 rounded hover:to-yellow-500">
+      <a  className="mt-2 ease-in duration-300 hover:scale-110  flex items-center justify-center" 
+        href="https://github.com/Sparshgarg14" 
+        target="_blank" 
+        rel="noopener noreferrer">
+      <button className="mt-4  bg-gradient-to-r from-teal-400 to-blue-500 hover:to-pink-500 text-white py-2 px-4 rounded shadow-lg shadow-cyan-500/50 ">
         See Project
       </button>
+      </a>
     </div>
 
     
@@ -251,13 +282,18 @@ export default function Home() {
         src="https://www.hostinger.in/tutorials/wp-content/uploads/sites/2/2022/06/Portfolio-website-of-the-product-designer-and-front-end-developer-Adham-Dannaway-1024x869.png"
         alt="Project 3"
       />
-      <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-2">Project 3</h3>
+      <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-2">JAVA DSA</h3>
       <p className="text-gray-600 dark:text-gray-300">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, fuga vitae saepe itaque rem blanditiis quo obcaecati.
+      I maintain a comprehensive Java DSA repository featuring solutions to challenging CP problems from platforms like Codeforces. The repository serves as a curated collection of efficient algorithms. 
       </p>
-      <button className="mt-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white py-2 px-4 rounded hover:to-yellow-500">
+      <a  className="mt-2 ease-in duration-300 hover:scale-110  flex items-center justify-center" 
+        href="https://github.com/Sparshgarg14/Java-DSA-" 
+        target="_blank" 
+        rel="noopener noreferrer">
+      <button className="mt-4  bg-gradient-to-r from-teal-400 to-blue-500 hover:to-pink-500 text-white py-2 px-4 rounded shadow-lg shadow-cyan-500/50 ">
         See Project
       </button>
+      </a>
     </div>
   </div>
 </section>

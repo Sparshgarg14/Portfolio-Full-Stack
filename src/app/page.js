@@ -189,7 +189,7 @@ export default function Home() {
     {/* First Codeforces Rating */}
     <div className="flex flex-col items-center ">
       <div className="h-72 w-72 flex items-center justify-center bg-gradient-to-r from-orange-400 to-orange-600 rounded-full shadow-[0_0_100px_rgba(255,165,0,0.6)]">
-        <CodeforcesRating className=" text-white" handle="" />
+        <CodeforcesRating className=" text-white" handle="Java_Coder" />
         
         </div>
         <div className="ease-in duration-300   hover:scale-110 h-16 w-16 ">

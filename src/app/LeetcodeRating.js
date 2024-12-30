@@ -30,7 +30,7 @@ function LeetcodeStats({ username }) {
             ) : stats ? (
                 <div>
                     <p className="text-2xl ">
-                        <strong>Total Solved:</strong> {stats.totalSolved.map(item => `${item.difficulty}: ${item.count}`).join(', ')}
+                    <strong>Total Solved:</strong> {stats.totalSolved.find(item => item.difficulty === "All")?.count || 0}
                     </p>
                     <p className="text-2xl">
                         <strong>Ranking:</strong> {stats.ranking}

@@ -10,9 +10,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import CodeforcesRating from './CodeforcesRating';
 import LeetcodeStats from "./LeetcodeRating";
 import { SiCodeforces } from "react-icons/si";
-import { SiLeetcode } from "react-icons/si";
 import { TbBrandLeetcode } from "react-icons/tb";
-
 
 
 export default function Home() {
@@ -33,6 +31,7 @@ export default function Home() {
         <link rel="icon" href = "/favicon.ico"/>
       </Head>
       <main className="bg-white px-10 dark:bg-black">
+      
         <section className= "min-h-screen" id="Home">
         <nav className=" relative py-8 mb-12 flex justify-between items-center">
       {/* Logo */}
@@ -190,7 +189,7 @@ export default function Home() {
     {/* First Codeforces Rating */}
     <div className="flex flex-col items-center ">
       <div className="h-72 w-72 flex items-center justify-center bg-gradient-to-r from-orange-400 to-orange-600 rounded-full shadow-[0_0_100px_rgba(255,165,0,0.6)]">
-        <CodeforcesRating className=" text-white" handle="SG_14" />
+        <CodeforcesRating className=" text-white" handle="" />
         
         </div>
         <div className="ease-in duration-300   hover:scale-110 h-16 w-16 ">

@@ -142,36 +142,36 @@ export default function Home() {
         {/* Frontend Development */}
         <div className="servicebox bg-gradient-to-r from-orange-400 to-orange-600 rounded-lg p-6 ease-in duration-300 hover:to-yellow-500 hover:scale-110 cursor-pointer shadow-[0_0_100px_rgba(255,165,0,0.6)]">
           <div className="servicesinfo flex flex-col">
-            <h4 className="text-xl font-semibold text-white mb-4">Frontend Development</h4>
+            <h4 className="text-xl text-center font-semibold text-white mb-4">Frontend Development</h4>
             <p className="text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reiciendis numquam, iure voluptate impedit tenetur commodi deleniti voluptatum.
+            Passionate front-end developer skilled in crafting intuitive user interfaces, responsive designs, and seamless user experiences. Proficient in modern technologies like React, JavaScript, and CSS, I bring creativity and technical expertise to every project.
             </p>
           </div>
         </div>
         {/* UI/UX Design */}
         <div className="servicebox bg-gradient-to-r from-orange-400 to-orange-600 rounded-lg p-6 ease-in duration-300 hover:to-yellow-500 hover:scale-110 cursor-pointer shadow-[0_0_100px_rgba(255,165,0,0.6)]">
           <div className="servicesinfo flex flex-col">
-            <h4 className="text-xl font-semibold text-white mb-4">UI/UX Design</h4>
+            <h4 className="text-xl text-center  font-semibold text-white mb-4">UI/UX Design</h4>
             <p className="text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reiciendis numquam, iure voluptate impedit tenetur commodi deleniti voluptatum.
+            Creative UI/UX designer focused on crafting user-centric interfaces and delightful experiences. Skilled in wireframing, prototyping, and design tools like Figma and Adobe XD, I transform ideas into intuitive, visually appealing solutions
             </p>
           </div>
         </div>
         {/* Backend Development */}
         <div className="servicebox bg-gradient-to-r from-orange-400 to-orange-600 rounded-lg p-6 ease-in duration-300 hover:to-yellow-500 hover:scale-110 cursor-pointer shadow-[0_0_100px_rgba(255,165,0,0.6)]">
           <div className="servicesinfo flex flex-col">
-            <h4 className="text-xl font-semibold text-white mb-4">Backend Development</h4>
+            <h4 className="text-xl  text-center font-semibold text-white mb-4">Backend Development</h4>
             <p className="text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reiciendis numquam, iure voluptate impedit tenetur commodi deleniti voluptatum.
+            Experienced backend developer proficient in Java Spring Boot, RESTful API development, and database management. Skilled in building scalable, secure, and high-performance server-side applications using technologies like Docker, Kubernetes, and SQL. 
             </p>
           </div>
         </div>
         {/* Competitive Programming */}
         <div className="servicebox bg-gradient-to-r from-orange-400 to-orange-600 rounded-lg p-6 ease-in duration-300 hover:to-yellow-500 hover:scale-110 cursor-pointer shadow-[0_0_100px_rgba(255,165,0,0.6)]">
           <div className="servicesinfo flex flex-col">
-            <h4 className="text-xl font-semibold text-white mb-4">Competitive Programming</h4>
+            <h4 className="text-xl text-center font-semibold text-white mb-4">CP </h4>
             <p className="text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reiciendis numquam, iure voluptate impedit tenetur commodi deleniti voluptatum.
+            Dedicated competitive programmer with a strong grasp of algorithms, data structures, and problem-solving techniques. Actively participating in platforms like Codeforces and LeetCode, I consistently tackle complex challenges and optimize solutions for efficiency.
             </p>
           </div>
         </div>

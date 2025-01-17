@@ -11,11 +11,30 @@ import CodeforcesRating from './CodeforcesRating';
 import LeetcodeStats from "./LeetcodeRating";
 import { SiCodeforces } from "react-icons/si";
 import { TbBrandLeetcode } from "react-icons/tb";
-
+import { FloatingDock } from './animation';
 
 export default function Home() {
   const[darkMode, setDarkMode] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const items = [
+    {
+      title: 'GitHub',
+      icon: <AiFillGithub  />,
+      href: 'https://github.com/Sparshgarg14/Java-DSA-',
+     
+    },
+    {
+      title: 'LinkedIn',
+      icon: <AiFillLinkedin />,
+      href: 'https://www.linkedin.com/in/sparsh-garg14/',
+    },
+    {
+      title: 'Email',
+      icon: <AiFillMail />,
+      href: 'mailto:ssparsh2000@gmail.com',
+    },
+  ];
+
   const [text] = useTypewriter({
     words: ['Developer', 'Competitive Programmer', 'Freelancer'],
     loop: true, // Infinite loop
@@ -124,13 +143,14 @@ export default function Home() {
           <h3 className="flex justify-center text-3xl py-1 bg-gradient-to-r from-orange-800 via-orange-600 to-yellow-200 bg-clip-text text-transparent font-medium"> {text} <span> <Cursor/></span></h3>
           <p className="flex justify-center text-lg py-5  text-gray-800  dark:text-white">Freelancer providing services for programming needs. Join me down below and let's get code websites</p>
           </div>
-          <div className="text-5xl flex justify-center gap-5 text-gray-900  dark:text-orange-500  ">
-            <a className=" ease-in duration-300  hover:scale-125 cursor-pointer " href="https://github.com/Sparshgarg14/Java-DSA-" ><AiFillGithub className="" /> </a>
-            <a className="ease-in duration-300  hover:scale-125" href="https://www.linkedin.com/in/sparsh-garg14/" target="_blank" rel="noopener noreferrer">
-          <AiFillLinkedin />
-          </a>
-          <a  className="ease-in duration-300  hover:scale-125" href="mailto:ssparsh2000@gmail.com"><AiFillMail/> </a>
-          </div>
+          <div className="text-5xl flex justify-center gap-5 text-gray-900 dark:text-orange-500 ">
+      {/* Apply the animation effect via FloatingDock */}
+      <FloatingDock 
+        items={items} 
+        desktopClassName="mt-8" // Customize styles for desktop dock
+        mobileClassName="fixed bottom-8 right-8" // Customize styles for mobile dock
+      />
+    </div>
           <div className="ease-in duration-300  hover:scale-110 relative mx-auto rounded-full w-80 h-80 mt-20 mb-10 overflow-hidden shadow-[0_0_90px_rgba(255,165,0,0.6)]"><img src="https://prompti.ai/wp-content/uploads/2023/07/pcboi2.png" alt="" /></div>
         </section>
 
